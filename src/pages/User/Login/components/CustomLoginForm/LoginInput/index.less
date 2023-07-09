@@ -1,0 +1,50 @@
+
+.p-class {
+  bottom: 33px;
+  transform: scale(.9);
+  color: rgb(82,97,107);
+}
+
+.login-input-item {
+  // padding-top: 30px;
+  position: relative;
+  p {
+    margin-bottom: 8px;
+    position: absolute;
+    left: 6px;
+    bottom: 0px;
+    transition: all .3s ease-in-out;
+  }
+  span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    left: 0px;
+    bottom: 0px;
+    transition: all .5s ease-in-out;
+    width: 0%;
+  }
+  input {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: #fff !important;
+    &:focus{
+      outline: none;
+      & + p {
+        .p-class();
+      }
+      & ~ span {
+        background-color: #169fff;
+        width: 100%;
+      }
+    }
+  }
+  .login-input-hasValue {
+    .p-class();
+  }
+}

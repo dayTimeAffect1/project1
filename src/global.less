@@ -1,0 +1,78 @@
+@import '~antd/es/style/variable.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.ant-pro .ant-pro-layout .ant-pro-layout-content{
+  margin: 0;
+}
+.ant-pro-card-body{
+  padding: 16px 24px!important;
+}
+.form-row-whole .ant-space-item{
+  width: 100%;
+}
+.table .ant-alert-info{
+  border: none;
+  background: white;
+  padding-left: 0;
+}
+.modal-ant-pro .ant-pro-query-filter-row .ant-form-item{
+  margin: 0;
+}
+.authTree .ant-tree-list-holder-inner{
+  display: block!important;
+}
+.authTree .ant-tree-list-holder-inner .inline{
+  display: inline-flex;
+  margin-right: 20px;
+}
+.ant-pro-global-header-logo img{
+  height: 56px;
+}
+

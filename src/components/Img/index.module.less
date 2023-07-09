@@ -1,0 +1,32 @@
+.img_container{
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  vertical-align: top;
+  .img_container_wrapper{
+    height: 100%;
+    padding: 8px;
+    border: 1px dashed #d9d9d9;
+    border-radius: 2px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loading{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .img_handle{
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      color: #aaa;
+      cursor: pointer;
+      transition: all 0.2s;
+      visibility: visible;
+      pointer-events: visible;
+    }
+  }
+}

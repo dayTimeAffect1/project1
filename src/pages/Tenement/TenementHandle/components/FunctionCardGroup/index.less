@@ -1,0 +1,86 @@
+.functionCardGroup{
+  .functionGroupTitle{
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 16px;
+    &::after{
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 6px;
+      height: 21px;
+      background: #169fff;
+      left: -10px;
+      top: 0;
+    }
+  }
+  .functionGroup{
+    display: flex;
+    flex-wrap: wrap;
+    .group{
+      margin-right: 32px;
+      margin-bottom: 12px;
+    }
+  }
+}
+.functionCard{
+  position: relative;
+  width: 280px;
+  height: 140px;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.88);
+  transition: all 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+  &:hover{
+    box-shadow: 0 1px 2px -2px rgb(0 0 0 / 12%), 0 3px 6px 0 rgb(0 0 0 / 12%), 0 5px 12px 4px rgb(0 0 0 / 12%);
+  }
+  .functionStatus{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    background: #eee;
+    border-radius: 3px;
+  }
+  .functionValidity{
+    margin-top: 6px;
+  }
+  .functionName{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  .hasStatus{
+    width: 188px;
+  }
+  .functionHandle{
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    a{
+      margin-right: 12px;
+    }
+  }
+}
+.text-info{
+  color: #169fff;
+}
+.text-notice{
+  color: coral;
+}
+.text-disable{
+  color: #999999;
+}
+.text-error{
+  color: #ff4d4f;
+}
