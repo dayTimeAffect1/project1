@@ -19,7 +19,7 @@ export async function getContentList(body: any, options?: { [key: string]: any }
     ...(options || {}),
   });
 }
-/** 新建管理员信息 */
+/** 新建文章信息 */
 export async function create(body: any, options?: { [key: string]: any }) {
   return request<any>('/cms/tenant/tenantManage/create', {
     method: 'POST',
@@ -28,14 +28,14 @@ export async function create(body: any, options?: { [key: string]: any }) {
   });
 }
 /** 查询管理员信息 */
-export async function getTenantInfo(body: any, options?: { [key: string]: any }) {
+export async function getContentInfo(body: any, options?: { [key: string]: any }) {
   return request<any>('/cms/tenant/tenantManage/getTenantInfo', {
     method: 'POST',
     data: createFromData(body),
     ...(options || {}),
   });
 }
-/** 修改管理员信息 */
+/** 修改文章信息 */
 export async function update(body: any, options?: { [key: string]: any }) {
   return request<any>('/cms/tenant/tenantManage/update', {
     method: 'POST',

@@ -47,20 +47,21 @@ export default [
     component: './ContentManage',
   },
   {
-    name: '管理员管理',
-    icon: 'team',
-    path: '/userManage',
-    component: './UserManage',
-  },
-  {
     name: '文章详情',
-    path: '/tenement/:type/:id',
-    component: './Tenement/TenementHandle',
+    path: '/contentM/:type/:id',
+    component: './ContentManage/ContentDetails',
     menuRender: false,
     menuHeaderRender: false,
     footerRender: false,
     hideInMenu: true,
   },
+  {
+    name: '管理员管理',
+    icon: 'team',
+    path: '/userManage',
+    component: './UserManage',
+  },
+
   {
     name: '数据看板',
     icon: 'database',
